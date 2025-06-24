@@ -14,7 +14,7 @@ const projects = [
       gallery: [
         "/assets/img/FuriaKYFPrint.PNG",
         "/assets/img/FuriaKYFPrint2.PNG",
-        "/assets/img/Hubpage_Furia.png",
+        "/assets/img/Hubpage_Furia.PNG",
       ]
     },
     {
