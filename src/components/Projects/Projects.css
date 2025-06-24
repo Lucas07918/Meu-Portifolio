@@ -64,3 +64,13 @@
 .project-card button:hover {
   background: var(--text-carolina-blue);
 }
+
+/*-----------------------------------*\
+  #RESPONSIVE CONTAINER
+\*-----------------------------------*/
+
+@media (max-width: 575px) {
+  .carousel {
+    justify-content: left;
+  }
+}
