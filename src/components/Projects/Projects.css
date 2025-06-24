@@ -5,6 +5,7 @@
 
 .carousel {
   display: flex;
+  justify-content: center;
   gap: 24px;
   overflow-x: auto;
   overflow-y: hidden;
