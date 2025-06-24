@@ -1,0 +1,65 @@
+.projects-section {
+  padding: var(--section-padding) 0;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-block: 16px;
+  /* padding-left: var(--section-padding); */
+  width: 100vw;
+  /* padding-left: var(--section-padding); */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.project-card {
+  flex: 0 0 auto;
+  min-width: clamp(260px, 30vw, 340px);
+  background: var(--bg-prussian-blue);
+  border-radius: 16px;
+  padding: 16px;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card:first-child {
+  margin-left: var(--section-padding);
+}
+
+.project-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.project-card h3 {
+  margin: 12px 0;
+  color: var(--text-columbia-blue);
+}
+
+.project-card button {
+  background: var(--bg-carolina-blue);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.project-card button:hover {
+  background: var(--text-carolina-blue);
+}

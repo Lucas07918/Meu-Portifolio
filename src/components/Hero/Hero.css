@@ -1,0 +1,165 @@
+/* ============================== */
+/* ========== HERO ============== */
+/* ============================== */
+
+.hero {
+  padding-block-start: calc(var(--section-padding) + 160px);
+}
+
+.hero .container {
+  display: grid;
+  gap: 50px;
+}
+
+/* ---------- Hero Text Content ---------- */
+
+.hero-subtitle {
+  font-size: var(--fontSize-6);
+  font-weight: var(--weight-bold);
+}
+
+.hero .section-title {
+  margin-block: 20px;
+}
+
+.hero .hero-text {
+  margin-block-end: 40px;
+}
+
+/* ---------- Input Wrapper (Optional) ---------- */
+
+.hero .input-wrapper {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  padding-inline-start: 20px;
+  background: var(--bg-prussian-blue);
+  border: 1px solid var(--bg-carolina-blue);
+  border-radius: var(--radius-6);
+  justify-items: flex-end;
+  transition: var(--transition-1);
+}
+
+.hero .input-wrapper:hover {
+  box-shadow: var(--shadow-2);
+}
+
+.hero .input-field {
+  padding-inline-end: 5px;
+}
+
+/* ---------- Hero Image Banner ---------- */
+
+.hero-banner {
+  position: relative;
+}
+
+.hero-banner .photo-card {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.photo-card {
+  width: 327px;
+  height: 490px;
+  background-color: var(--bg-prussian-blue);
+  border-radius: var(--radius-16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.photo-text {
+  color: var(--text-wild-blue-yonder);
+  font-size: var(--fontSize-5);
+  text-align: center;
+  opacity: 0.7;
+}
+
+/* ---------- Shapes & Animation ---------- */
+
+.hero .shape {
+  position: absolute;
+  z-index: 1;
+  animation: heroDecoAnim 3s linear infinite alternate;
+}
+
+.hero .shape-1 {
+  top: 50px;
+  right: 40px;
+}
+
+.hero .shape-2 {
+  bottom: 20px;
+  left: 24px;
+}
+
+@keyframes heroDecoAnim {
+  0% {
+    transform: translateY(40px) rotate(0);
+  }
+  100% {
+    transform: translateY(0) rotate(0.4turn);
+  }
+}
+
+/* ---------- Background Decorations (Optional) ---------- */
+
+.hero-bg {
+  display: none;
+}
+
+.hero-bg-1 {
+  top: 80px;
+  left: 0;
+}
+
+.hero-bg-2 {
+  bottom: -200px;
+  left: -20px;
+}
+
+/* ============================== */
+/* ======= RESPONSIVE =========== */
+/* ============================== */
+
+@media (min-width: 575px) {
+  .hero {
+    position: relative;
+  }
+
+  .hero .input-wrapper {
+    max-width: 390px;
+  }
+
+  .hero-bg {
+    display: block;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero .container {
+    gap: 70px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    padding-block-start: calc(var(--section-padding) + 80px);
+  }
+
+  .hero .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero .container {
+    max-width: 1050px;
+  }
+}

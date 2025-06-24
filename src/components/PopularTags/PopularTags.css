@@ -1,0 +1,93 @@
+/* ============================== */
+/* ========= POPULAR TAGS ======= */
+/* ============================== */
+
+
+/* ---------- Grid Container ---------- */
+
+.tags .grid-list {
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+}
+
+.grid-list {
+  margin: 5rem 0 0 0;
+}
+
+
+/* ---------- Tag Button ---------- */
+
+.tag-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 18px;
+  border-radius: var(--radius-16);
+  position: relative;
+}
+
+.tag-btn:is(:hover, :focus-visible) {
+  box-shadow: var(--shadow-2);
+  background-image: linear-gradient(
+      var(--bg-oxford-blue),
+      var(--bg-oxford-blue)
+    ),
+    var(--gradient-1);
+  background-clip: padding-box, border-box;
+  border-color: transparent;
+  transform: translateY(-2px);
+  transition: var(--transition-1);
+}
+
+
+/* ---------- Icon Inside Button ---------- */
+
+.tag-btn img {
+  width: 100%;
+  max-width: 32px;
+}
+
+
+/* ---------- Tooltip ---------- */
+
+.tooltip {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-oxford-blue);
+  color: var(--text-columbia-blue);
+  padding: 6px 12px;
+  border-radius: var(--radius-8);
+  white-space: nowrap;
+  box-shadow: var(--shadow-2);
+  font-size: 0.875rem;
+  z-index: 10;
+  opacity: 0;
+  animation: fadeIn 0.2s forwards;
+}
+
+/* Tooltip Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* ============================== */
+/* ========= RESPONSIVE ========= */
+/* ============================== */
+
+@media (min-width: 992px) {
+  .tags .grid-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .tags .grid-list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

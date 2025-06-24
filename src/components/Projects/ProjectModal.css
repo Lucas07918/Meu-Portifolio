@@ -1,0 +1,173 @@
+/* Overlay */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  /* Modal */
+  .modal-content {
+    background-color: var(--bg-oxford-blue-2);
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 1100px;
+    /* display: flex;
+    gap: 30px; */
+    position: relative;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: var(--text-alice-blue);
+    cursor: pointer;
+  }
+  
+  /* Layout */
+  .modal-body {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .modal-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .modal-image {
+    width: clamp(400px, 50vw, 600px);
+    /* height: clamp(250px, 28vw, 340px); */
+    border-radius: 16px;
+    user-select: none;
+    object-fit: cover;
+    background-color: #0a0a0a;
+    width: clamp(280px, 50vw, 600px);
+    height: clamp(180px, 28vw, 340px);
+  }
+  
+  .carousel-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .carousel-buttons button {
+    background-color: var(--bg-prussian-blue);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .paginator {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+  }
+  
+  .paginator .dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--text-wild-blue-yonder);
+    border-radius: 50%;
+    opacity: 0.4;
+  }
+  
+  .paginator .dot.active {
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+    background-color: var(--text-carolina-blue);
+  }
+  
+  /* Right Panel */
+  .modal-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .description {
+    margin-block: 20px;
+    max-width: 500px;
+  }
+  
+  .technologies h4 {
+    margin-bottom: 8px;
+  }
+  
+  .tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .tech-item {
+    background-color: var(--bg-prussian-blue);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 14px;
+  }
+
+  .project-link {
+    margin-top: 20px;
+  }
+  
+  .project-link p {
+    margin-bottom: 4px;
+    color: var(--text-columbia-blue);
+    font-weight: 500;
+  }
+  
+  .project-link a {
+    color: var(--bg-carolina-blue);
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+  
+  .project-link a:hover {
+    color: var(--text-carolina-blue);
+  }
+  
+
+  @media (max-width: 768px) {
+    .modal-content {
+      flex-direction: column;
+      gap: 24px;
+      text-align: center;
+    }
+  
+    .modal-image {
+      width: 90%;
+      /* height: auto; */
+      max-height: 240px;
+    }
+  
+    .description {
+      max-width: 90%;
+    }
+
+    .modal-body {
+        flex-direction: column;
+    }
+  }
+  
