@@ -1,6 +1,6 @@
 # Lucas Silva — Developer Portfolio
 
-![Preview](./public/assets/img/insta-post-1.png)
+![Preview](./public/assets/img/Logo-Avery-white.png)
 
 A modern, responsive and animated portfolio built to showcase my projects, skills, and objectives as a software developer.
 
@@ -33,7 +33,7 @@ A modern, responsive and animated portfolio built to showcase my projects, skill
 ---
 
 ## 📁 Project Structure
-
+```
 src/
 │
 ├── components/
@@ -59,31 +59,39 @@ src/
 │   └── ResumeButton.css
 │
 └── App.jsx
+```
 
 ## 🖼️ Highlighted Projects
 
 | Project | Description | Technologies |
 |--------|-------------|--------------|
 | **FURIA Fan Hub** | A web platform to connect FURIA fans with tailored content. | React, Firebase |
-| **FlowFake.gg** | A parody news portal inspired by FlowGames.gg. | React |
-| **Diet Generator** | One-click custom diet generator. | React, JavaScript |
-| **Fitness App** | Gamified Flutter app with challenges and leaderboard. | Flutter, Firebase |
+| **SlowGames** | A parody news portal inspired by FlowGames.gg. | HTML/CSS, JavaScript |
+| **Diet Generator** | One-click custom diet generator. | Python, Flask |
 
 ---
 
 ## 🧪 How to Run Locally
 
-# Clone the repository
+### Clone the repository
+```bash
 git clone https://github.com/your-username/dev-portfolio.git
+```
 
-# Enter the folder
+### Enter the folder
+```bash
 cd dev-portfolio
+```
 
-# Install dependencies
+### Install dependencies
+```bash
 npm install
+```
 
-# Start the local server
+### Start the local server
+```bash
 npm run dev
+```
 
 ---
 
@@ -92,7 +100,6 @@ This project is licensed under the MIT License.
 Feel free to use it as a reference or starting point for your own portfolio.
 
 ## 🙋‍♂️ About Me
-Lucas Silva
-[LinkedIn](https://www.linkedin.com/in/lu-sc/)
-
 Developer focused on building web and mobile solutions using modern technologies, prioritizing performance, usability, and solving software engineering challenges.
+
+[LinkedIn](https://www.linkedin.com/in/lu-sc/)
